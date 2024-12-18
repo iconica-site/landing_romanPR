@@ -1,0 +1,1108 @@
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-MediumOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-MediumOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-Oblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/Involve-SemiBoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Involve', sans-serif; /* Применение шрифта */
+    margin: 0px;
+    /* overflow-x: hidden; */
+}
+
+/* Общий блок */
+.promo-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* height: 780px; */
+    width: auto;
+    background: url('img/shipenie.png'), #F3F3F3; /* Подключаем фоновое изображение */
+    background-size: cover;
+    background-blend-mode: soft-light;
+    padding: 40px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    position: relative; /* Для позиционирования фонового шара */
+    overflow: hidden;
+}
+
+/* Левая часть */
+.promo-content {
+    max-width: 40%;
+    color: #333;
+    padding-top: 50px;
+}
+
+.promo-subtitle {
+    font-size: 24px;
+    font-family: "Manrope", serif;
+    font-weight: 400;
+    line-height: 32.78px;
+    margin-bottom: 10px;
+    color: #7E7E7E;
+}
+
+.promo-title {
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 80.5px;
+    margin-right: 30px;
+}
+
+.promo-title-lastname {
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 80.5px;
+}
+
+.promo-text {
+    font-size: 31.93px;
+    line-height: 31.93px;
+    font-family: "Manrope", serif;
+    font-weight: 300;
+    color: #7E7E7E;
+    max-width: 321px;
+    margin: 10px 0;
+}
+
+.promo-desc {
+    font-family: "Manrope", serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27.32px;
+    margin-bottom: 30px;
+    color: #7E7E7E;
+    max-width: 296px;
+    padding-bottom: 50px;
+}
+
+.promo-button {
+    display: inline-block;
+    background-color: #333333;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    max-width: 360px;
+    height: 90px;
+    width: 100%;
+}
+
+.promo-button:hover {
+    background-color: #000;
+}
+
+/* Правая часть с изображением */
+.promo-image {
+    position: relative; /* Для позиционирования шара */
+    /* left: 5%; */
+    max-width: 60%;
+}
+
+.promo-image img {
+    position: relative;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 2; /* Человек поверх шара */
+    top: 5px;
+}
+
+/* Фоновое изображение шара */
+.promo-image-bg {
+    position: absolute;
+    top: -14%;
+    right: -16%;
+    width: 125%;
+    height: 125%;
+    background: url('img/Rectangle(1).png') no-repeat center;
+    background-size: contain;
+    /* transform: rotate(60deg); */
+    transform: rotate(0deg);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.promo-head-flex {
+    display: flex;
+    align-items: center;
+}
+.promo-head-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* .block-facktoids-main {
+    background-color: #333333;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.facktoids-img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 30%;
+    height: 75%;
+    background: url(img/Group.svg) no-repeat center;
+    background-size: contain;
+    transform: rotate(0deg);
+    opacity: 0.7;
+    z-index: 1;
+}
+.facktoids {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-around;
+} */
+
+ /* Стили для общего блока */
+/* Общий блок */
+.info-section {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Контейнер для статистики и картинки */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* gap: 50px; */
+}
+
+.info-cont-main {
+    display: flex;
+    justify-content: center;
+}
+
+.info-cont-center {
+    max-width: 1475px;
+    width: 100%;
+}
+
+/* Блок с текстовой информацией */
+.info-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+  /* max-width: 40%; */
+  z-index: 5;
+  padding-top: 100px;
+}
+
+.stat-item {
+  /* display: flex;
+    flex-direction: column; */
+    max-width: 239px;
+}
+
+.stat-number {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 85.12px;
+  color: #FFFFFF;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.stat-label {
+  font-size: 32px;
+  line-height: 43.71px;
+  font-weight: 300;
+  color: #aaa;
+  font-family: "Manrope", serif;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+/* Позиционирование картинки */
+.info-graphic {
+  position: relative;
+  /* max-width: 50%; */
+}
+
+.info-graphic img {
+  /* width: 100%; */
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+  position: relative;
+  bottom: 41px;
+  /* right: 58px; */
+}
+
+/* Нижний блок с текстом */
+.details-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 100px;
+    /* gap: 470px; */
+}
+
+.details-left h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 49.18px;
+  font-family: "Manrope", serif;
+  color: #FFFFFFA8;
+  margin-bottom: 10px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.details-left p {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 53.2px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  max-width: 500px;
+}
+
+.details-left strong {
+  text-decoration: underline;
+}
+
+
+.details-right p {
+  font-size: 24px;
+  line-height: 31.92px;
+  font-weight: 400;
+  margin: 5px 0;
+  max-width: 460px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.details-right-text {
+    display: flex;
+    align-items: baseline;
+}
+
+.details-right-text svg{
+    margin-right: 10px;
+}
+
+.your-reputation-main {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background: url('img/shipenie.png'), #F3F3F3; /* Подключаем фоновое изображение */
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+.your-reputation-center {
+    /* border: solid; */
+    max-width: 1475px;
+    width: 100%;
+    display: flex;
+}
+
+.your-rep-collapse {
+    display: flex;
+    /* overflow: hidden; */
+    margin-left: 25px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.your-rep-collapse-show-more {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -25px;
+    border: solid #EDEDED 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.your-rep-collapse img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover; /* Заполняет контейнер */
+    object-position: center top; /* Центрирует изображение по горизонтали, смещает вверх */
+    margin-left: -25px;
+    border: solid #EDEDED 2px;
+}
+
+.your-rep-collapse img:nth-child(1) {
+    object-position: 50% 0%; /* Поднять изображение вверх */
+}
+
+
+.your-reputation-head h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49.18px;
+    font-family: "Manrope", serif;
+    color: #41414180;
+    margin-block-start: 100px;
+    margin-block-end: 30px;
+    white-space: nowrap;
+}
+
+
+
+.your-rep-text h4 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55.2px;
+    color: #414141;
+    max-width: 877px;
+    margin-block-start: 10px;
+    margin-block-end: 50px;
+    white-space: nowrap;
+}
+
+.your-rep-collapse-show-more span {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42.56px;
+}
+
+.your-rep-group {
+    width: 55%;
+}
+
+.your-rep-illustr {
+    /* width: 51%;
+    position: relative;
+    top: 10%;
+    left: 14%;
+    height: 90%; */
+    position: relative;
+    top: 24%;
+    left: 8%;
+}
+
+.case-section {
+    background-color: #333333;
+}
+
+.case-main {
+    /* height: 727px; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.case-center {
+    max-width: 1475px;
+    width: 100%;
+}
+
+.case-head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.case-head  h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63.84px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: #FFFFFF;
+}
+
+.case-button-slider-left {
+    width: 53px;
+    height: 53px;
+    border: solid 1px #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:15px;
+    transition: background-color 0.3s ease;
+}
+
+.case-button-slider-right {
+    width: 53px;
+    height: 53px;
+    border: solid 1px #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+    transition: background-color 0.3s ease;
+}
+
+.case-button-slider {
+    display: flex;
+}
+
+/* Общий стиль */
+.swiper-container {
+    width: 100%;
+    max-width: 1475px;
+    color: #FFFFFF; /* Белый текст */
+    overflow: hidden;
+}
+
+/* Слайд */
+.case-slide-block {
+    display: flex;
+    /* height: 465px; */
+    align-items: start;
+    justify-content: space-between;
+    background-color: #2E2E2E; /* Серый фон */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+}
+
+/* Левая часть: Картинка */
+.slider-image {
+    padding: 40px;
+}
+.slider-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Делаем изображение круглым */
+    object-fit: cover;
+}
+
+/* Средняя часть: Текст */
+.slider-text {
+    max-width: 335px;
+    padding: 40px;
+}
+
+.slider-text h3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42.56px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.slider-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.86px;
+    margin-bottom: 15px;
+    color: #FFFFFFB2;
+}
+
+.slider-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    height: 58px;
+}
+
+/* Правая часть: Описание */
+.slider-description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.12px;
+    color: #FFFFFFB2;
+    /* margin-right: 60px; */
+    max-width: 400px;
+    padding: 40px;
+}
+
+/* Кастомные кнопки навигации */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FFFFFF; /* Белый цвет стрелок */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px; /* Размер стрелок */
+    transition: color 0.3s ease;
+}
+
+/* Блоки case-button-slider-left и case-button-slider-right */
+.case-button-slider-left:hover,
+.case-button-slider-right:hover {
+    background-color: #FFFFFF; /* Белый цвет фона при наведении */
+    cursor: pointer; /* Меняем курсор на указатель */
+}
+
+/* При наведении на блоки меняем цвет стрелок */
+.case-button-slider-left:hover .swiper-button-prev::after,
+.case-button-slider-right:hover .swiper-button-next::after {
+    color: #333333; /* Темно-серый цвет для стрелок */
+}
+
+.case-slider {
+    padding-top: 70px;
+}
+
+.case-slider-text a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32.78px;
+    font-family: "Manrope", serif;
+    color: #FFFFFF;
+}
+
+.case-slider-text-center {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.case-slider-text-bottom {
+    padding-bottom: 30px;
+}
+
+.your-pr span {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49.18px;
+    font-family: "Manrope", serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.your-pr h3 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55.2px;
+    margin-block-start: 10px;
+    margin-block-end: 30px;
+    white-space: nowrap;
+}
+
+.your-pr-punkts {
+    display: flex;
+    align-items: center;
+}
+
+.your-pr-punkts svg {
+    margin-right: 20px;
+}
+
+.your-pr-punkts p {
+    max-width: 550px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.your-pr-block {
+    /* gap: 150px; */
+}
+
+.your-pr-image {
+    top: -40%;
+    right: -7%;
+}
+
+.faq-block {
+    background-color: #333333;
+}
+
+.faq-main {
+    display: flex;
+    justify-content: center;
+}
+
+.faq-center {
+    max-width: 1475px;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-card {
+    width: 100%;
+    max-width: 600px;
+    background: #3F3F3F;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.faq-card-flex {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+}
+
+.faq-card-flex p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "Manrope", serif;
+    color: white;
+}
+
+.faq-main-content {
+    width: 50%;
+    z-index: 5;
+}
+
+.faq-head {
+    /* padding-top: 100px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faq-head h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55.2px;
+    color: #FFFFFF;
+    margin-block-start: 0em;
+    margin-block-end: 1.5em;
+}
+
+.faq-card-otvet {
+    font-family: "Manrope", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    max-height: 0; /* Изначально скрыто */
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Плавное раскрытие и прозрачность */
+    margin-top: 0;
+}
+
+/* Анимация вращения стрелки */
+.faq-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-card.open .faq-arrow {
+    transform: rotate(0deg); /* Вращение SVG */
+}
+
+.faq-card.open .faq-card-otvet {
+    max-height: 200px; /* Устанавливаем максимальную высоту для раскрытия */
+    opacity: 1;
+    margin-top: 10px; /* Отступ сверху при появлении */
+}
+.faq-head-img {
+    position: relative;
+    /* top: 34%; */
+    right: 29%;
+}
+
+.faq-head-and-button button {
+    max-width: 360px;
+    width: 100%;
+    height: 90px;
+    color: #333333;
+    background-color: white;
+    font-family: "Manrope", serif;
+    cursor: pointer;
+}
+
+.footer-block-main {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-block-center {
+    max-width: 1475px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.footer-block-column ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.footer-block-head h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63.84px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color: #414141;
+}
+
+.footer-block-head p {
+    font-weight: 600;
+    font-family: "Manrope", serif;
+    font-size: 24px;
+    line-height: 36px;
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+    color: #414141;
+}
+
+.footer-block-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-block-column li {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: "Manrope", serif;
+    padding: 5px;
+    padding-left: 0px;
+    color: #5A5A5A;
+}
+
+.footer-block-column svg {
+    margin-right: 10px;
+}
+
+.footer-block-button {
+    display: flex;
+    align-items: end;
+}
+
+.footer-block-button button {
+    margin-bottom: 5px;
+}
+
+.footer-block-border {
+    background-color: #0000004D;
+    height: 1px;
+    width: 100%;
+}
+
+.footer-block-politic {
+    padding-top: 40px;
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+}
+.footer-block-politic-text p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21.86px;
+    font-family: "Manrope", serif;
+    color: #7E7E7E;
+}
+
+.footer-block-dannie p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21.86px;
+    font-family: "Manrope", serif;
+    color: #7E7E7E;
+}
+
+/* @media (max-width: 1920px) {
+    .info-container {
+        gap: 155px;
+    }
+} */
+
+/* Общий стиль для попапа */
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.popup-yes-right {
+    display: none;
+}
+
+/* Класс, который будет добавляться */
+.popup-yes-right.show {
+    display: flex;
+}
+
+.popup-content {
+    display: flex;
+    background-color: #fff;
+    /* overflow: hidden; */
+    max-width: 760px;
+    width: 100%;
+    max-height: 405px;
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+/* Левая часть попапа */
+.popup-left {
+    padding: 50px;
+    flex: 1;
+}
+
+.popup-left h3 {
+    color: #41414180;
+    font-family: "Manrope", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.78px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.popup-left p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.4px;
+    margin: 10px 0 70px;
+}
+
+.popup-buttons {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.btn {
+    /* max-width: 240px;
+    width: 100%; */
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Manrope", serif;
+    line-height: 18.2px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #333333;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #aaa;
+    color: #333;
+}
+
+/* Правая часть попапа */
+.popup-right {
+    flex: 1;
+}
+
+.popup-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Кнопка закрытия */
+.popup-close {
+    position: absolute;
+    top: -40px; /* Поднимаем крестик за пределы модального окна */
+    right: -40px; /* Смещаем крестик вправо за пределы */
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001; /* Поверх попапа */
+}
+
+/* Вторая форма попап */
+.popup-form {
+    display: none; /* Изначально скрыта */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.popup-form.show {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-form-content {
+    background-color: #fff;
+    padding: 60px;
+    max-width: 560px;
+    width: 100%;
+    /* height: 449px; */
+    text-align: left;
+    position: relative;
+}
+
+.popup-form h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #414141;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47.88px;
+}
+
+.popup-form p {
+    margin-bottom: 20px;
+    color: #414141;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Manrope", serif;
+}
+
+.popup-form input {
+    width: 100%;
+    max-width: 300px;
+    /* height: 62.5px; */
+    padding: 23px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    max-width: 240px;
+    padding: 18px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.popup-close-form {
+    position: absolute;
+    top: -40px; /* Поднимаем крестик за пределы модального окна */
+    right: -40px; /* Смещаем крестик вправо за пределы */
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001; /* Поверх попапа */
+}
+.details-right-text-first {
+    margin-top: 110px;
+}
+.your-rep-mobile-h4 {
+    display: none;
+}
+.faq-button-mobile {
+    display: none;
+}
+.promo-button-mobile {
+    display: none;
+}

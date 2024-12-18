@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-media.css">
+</head>
+
+<body>
+
+    <!-- Открывается при открытии страницы -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup('popup')">&#x2715;</button>
+            <div class="popup-left">
+                <h3>ВАЖНЫЙ ВОПРОС</h3>
+                <p>Вы являетесь миллиардером?</p>
+                <div class="popup-buttons">
+                    <button class="btn btn-primary" onclick="yesButtonClick()">ДА, ВЕРНО</button>
+                    <button class="btn btn-secondary" onclick="closePopup('popup')">ПОКА НЕТ</button>
+                </div>
+            </div>
+            <div class="popup-right">
+                <img src="img/Роман.png" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Открывается при нажатии ДА ВЕРНО -->
+    <div class="popup popup-yes-right" id="popup-yes-right">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup('popup-yes-right')">&#x2715;</button>
+            <div class="popup-left">
+                <p>
+                    В таком случае 
+                    вам лучше посетить
+                    сайт Яндекс.Директ
+                </p>
+                <div class="popup-buttons">
+                    <button class="btn btn-primary">ПЕРЕЙТИ</button>
+                </div>
+            </div>
+            <div class="popup-right">
+                <img src="img/Слой4.png" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Вторая форма (попап) -->
+    <div class="popup-form" id="popup-form">
+        <div class="popup-form-content">
+            <button class="popup-close-form" onclick="closeFormPopup()">&#x2715;</button>
+            <h3>Заполните форму</h3>
+            <p>Наш менеджер свяжется с вами</p>
+            <form>
+                <input type="text" id="name" placeholder="Ваше имя:">
+                <input type="tel" id="phone" placeholder="Ваш телефон:">
+                <button type="submit" class="submit-button">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section class="promo-first-block">
+            <div class="promo-block">
+                <div class="promo-content">
+                  <h3 class="promo-subtitle">— Пиарщик №1 в России</h3>
+                    <div class="promo-head-title">
+                        <div class="promo-head-flex">
+                            <h1 class="promo-title">Роман</h1>
+                            <p class="promo-text">PR для для компаний и основателей</p>
+                        </div> 
+                        <h1 class="promo-title-lastname">Масленников</h1>
+                    </div>
+                  <p class="promo-desc">
+                    Продвинем ваш бизнес и репутацию на новый уровень
+                  </p>
+                  <button class="promo-button">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                </div>
+                <div class="promo-image">
+                  <div class="promo-image-bg"></div>
+                  <img src="img/first-block.png" alt="Роман Масленников" />
+                </div>
+                <div class="promo-button-mobile">
+                    <button class="promo-button">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-cont-main">
+                <div class="info-cont-center">
+                    <div class="info-container">
+                    <div class="info-stats">
+                        <div class="stat-item">
+                        <span class="stat-number">568</span>
+                        <span class="stat-label">клиентов</span>
+                        </div>
+                        <div class="stat-item">
+                        <span class="stat-number">238</span><br>
+                        <span class="stat-label">ниш</span>
+                        </div>
+                        <div class="stat-item">
+                        <span class="stat-number">18 лет</span>
+                        <span class="stat-label">опыта</span>
+                        </div>
+                    </div>
+                    <div class="info-graphic">
+                        <img src="img/Group.svg" alt="3D форма">
+                    </div>
+                    </div>
+                
+            
+                    <div class="details-block">
+                    <div class="details-left">
+                        <h2>Для кого</h2>
+                        <p>
+                        Специализация на амбициозных проектах с капиталом 
+                        <a>от 1 млрд Р</a>
+                        </p>
+                    </div>
+                    <div class="details-right">
+                        <div class="details-right-text details-right-text-first">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 23.5C22.8284 23.5 23.5 22.8284 23.5 22L23.5 8.5C23.5 7.67157 22.8284 7 22 7C21.1716 7 20.5 7.67157 20.5 8.5V20.5H8.5C7.67157 20.5 7 21.1716 7 22C7 22.8284 7.67157 23.5 8.5 23.5L22 23.5ZM0.93934 3.06066L20.9393 23.0607L23.0607 20.9393L3.06066 0.93934L0.93934 3.06066Z" fill="white"/>
+                            </svg>
+                            <p>Хотите управлять своей репутацией на уровне Forbes</p>
+                        </div>
+                        <div class="details-right-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 23.5C22.8284 23.5 23.5 22.8284 23.5 22L23.5 8.5C23.5 7.67157 22.8284 7 22 7C21.1716 7 20.5 7.67157 20.5 8.5V20.5H8.5C7.67157 20.5 7 21.1716 7 22C7 22.8284 7.67157 23.5 8.5 23.5L22 23.5ZM0.93934 3.06066L20.9393 23.0607L23.0607 20.9393L3.06066 0.93934L0.93934 3.06066Z" fill="white"/>
+                            </svg>
+                            <p>Интересует PR, который приносит прибыль и влияние</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="your-reputation-main">
+
+                <div class="your-reputation-center">
+                    <div class="your-rep-group">
+                        <div class="your-reputation-head">
+                            <h2>ПОЗАБОТЬТЕСЬ О СВОЕЙ РЕПУТАЦИИ</h2>
+                        </div>
+                        <div class="your-rep-text"> 
+                            <h4 class="your-rep-desk-h4">Получите PR-консультацию у<br>
+                                самых опытных специалистов<br>
+                                в России</h4>
+
+                            <h4 class="your-rep-mobile-h4">Получите PR-консультацию у
+                                самых опытных специалистов
+                                в России</h4>
+                        </div>
+
+                        <div class="your-rep-collapse">
+                            <div>
+                                <img src="img/c93fea535c38e4d4b25428afae5c3463.jpg">
+                            </div>
+                            <div>
+                                <img src="img/bb42f437b4d73502270271da8f117586.jpg">
+                            </div>
+                            <div>
+                                <img src="img/1d9ffa1f18d487646c614f6d6f66e132.jpg">
+                            </div>
+                            <div>
+                                <img src="img/f80cdba1af93de6167ba717b36dfc5bf.jpg">
+                            </div>
+                            <div class="your-rep-collapse-show-more">
+                                <span>15+</span>
+                            </div>
+                        </div>
+                        <div class="your-rep-butt">
+                            <button class="promo-button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                        </div>
+                    </div>
+                    <div class="your-rep-illustr-block">
+                        <img class="your-rep-illustr" src="img/Иллюстрация.png">
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </section>
+
+        <section class="case-section">
+            <div class="case-main">
+                <div class="case-center">
+                    <div class="case-head">
+                        <h2>Кейсы</h2>
+                        <div class="case-button-slider">
+                            <div class="case-button-slider-left">
+                                <div class="swiper-button-prev" style="position: relative; top: 10px; left: 0px;"></div>
+                            </div>
+
+                            <div class="case-button-slider-right">
+                                <div class="swiper-button-next" style="transform: rotate(180deg); left: 12px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-slider">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide case-slide-block">
+                                    <div class="slider-image">
+                                        <img src="img/slide1.png" alt="Person 1">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="case-slider-text">
+                                            <h3>Денис Кузнецов</h3>
+                                            <p>производство люков-невидимок Revizor</p>
+                                        </div>
+                                        <div class="case-slider-text case-slider-text-center">
+                                            <p><a>300 МЛН Р</a> выручки в год</p>
+                                        </div>
+                                        <div class="case-slider-text case-slider-text-bottom">
+                                            <p>у него три высших образования, четверо детей и несколько бизнес-проектов</p>
+                                        </div>
+                                        <button class="slider-button">ЧИТАТЬ СТАТЬЮ</button>
+                                    </div>
+                                    <div class="slider-description">
+                                        <p>«Я многогранная личность», — говорит 34-летний основатель ГК «Фабрика люков и дверей Revizor»
+                                             Денис Кузнецов. Несколько раз предприниматель был на грани провала: первый же партнер оказался мошенником,
+                                              а доступ на строительные рынки Кузнецов выиграл в партию в нарды. Сейчас его главный актив — это производство
+                                               изделий из металла. Основной продукт — люки под брендом Revizor, которые скрывают трубы, вентили и счетчики в ванной.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide case-slide-block">
+                                    <div class="slider-image">
+                                        <img src="img/slide1.png" alt="Person 1">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="case-slider-text">
+                                            <h3>Иван Кузнецов</h3>
+                                            <p>производство люков-невидимок Revizor</p>
+                                        </div>
+                                        <div class="case-slider-text case-slider-text-center">
+                                            <p><a>300 МЛН Р</a> выручки в год</p>
+                                        </div>
+                                        <div class="case-slider-text case-slider-text-bottom">
+                                            <p>у него три высших образования, четверо детей и несколько бизнес-проектов</p>
+                                        </div>
+                                        <button class="slider-button">ЧИТАТЬ СТАТЬЮ</button>
+                                    </div>
+                                    <div class="slider-description">
+                                        <p>«Я многогранная личность», — говорит 34-летний основатель ГК «Фабрика люков и дверей Revizor»
+                                             Денис Кузнецов. Несколько раз предприниматель был на грани провала: первый же партнер оказался мошенником,
+                                              а доступ на строительные рынки Кузнецов выиграл в партию в нарды. Сейчас его главный актив — это производство
+                                               изделий из металла. Основной продукт — люки под брендом Revizor, которые скрывают трубы, вентили и счетчики в ванной.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide case-slide-block">
+                                    <div class="slider-image">
+                                        <img src="img/slide1.png" alt="Person 1">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="case-slider-text">
+                                            <h3>Андрей Кузнецов</h3>
+                                            <p>производство люков-невидимок Revizor</p>
+                                        </div>
+                                        <div class="case-slider-text case-slider-text-center">
+                                            <p><a>300 МЛН Р</a> выручки в год</p>
+                                        </div>
+                                        <div class="case-slider-text case-slider-text-bottom">
+                                            <p>у него три высших образования, четверо детей и несколько бизнес-проектов</p>
+                                        </div>
+                                        <button class="slider-button">ЧИТАТЬ СТАТЬЮ</button>
+                                    </div>
+                                    <div class="slider-description">
+                                        <p>«Я многогранная личность», — говорит 34-летний основатель ГК «Фабрика люков и дверей Revizor»
+                                             Денис Кузнецов. Несколько раз предприниматель был на грани провала: первый же партнер оказался мошенником,
+                                              а доступ на строительные рынки Кузнецов выиграл в партию в нарды. Сейчас его главный актив — это производство
+                                               изделий из металла. Основной продукт — люки под брендом Revizor, которые скрывают трубы, вентили и счетчики в ванной.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Кастомные кнопки навигации -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-first-block">
+            <div class="promo-block your-pr-block">
+                <div class="promo-image" style="max-width: none;">
+                  <div class="promo-image-bg your-pr-image"></div>
+                  <img src="img/Слой13.png" alt="Роман Масленников" />
+                </div>
+                <div class="promo-content">
+                    <div class="your-pr">
+                        <span>Кто стоит за вашим PR?</span>
+                        <h3>Роман Масленников</h3>
+                    </div>
+                    <div class="your-pr-punkts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 23.5C22.8284 23.5 23.5 22.8284 23.5 22L23.5 8.5C23.5 7.67157 22.8284 7 22 7C21.1716 7 20.5 7.67157 20.5 8.5V20.5H8.5C7.67157 20.5 7 21.1716 7 22C7 22.8284 7.67157 23.5 8.5 23.5L22 23.5ZM0.93934 3.06066L20.9393 23.0607L23.0607 20.9393L3.06066 0.93934L0.93934 3.06066Z" fill="#414141"/>
+                        </svg>
+                        <p>Кандидат философских наук, <b>автор 106 книг</b>, основатель агентства «Взрывной PR</p>
+                    </div>
+                    <div class="your-pr-punkts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 23.5C22.8284 23.5 23.5 22.8284 23.5 22L23.5 8.5C23.5 7.67157 22.8284 7 22 7C21.1716 7 20.5 7.67157 20.5 8.5V20.5H8.5C7.67157 20.5 7 21.1716 7 22C7 22.8284 7.67157 23.5 8.5 23.5L22 23.5ZM0.93934 3.06066L20.9393 23.0607L23.0607 20.9393L3.06066 0.93934L0.93934 3.06066Z" fill="#414141"/>
+                        </svg>
+                        <p><b>Среди клиентов:</b> МТС, Universal Pictures, Администрация Президента РФ и другие</p>
+                    </div>
+                    <div class="your-pr-punkts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 23.5C22.8284 23.5 23.5 22.8284 23.5 22L23.5 8.5C23.5 7.67157 22.8284 7 22 7C21.1716 7 20.5 7.67157 20.5 8.5V20.5H8.5C7.67157 20.5 7 21.1716 7 22C7 22.8284 7.67157 23.5 8.5 23.5L22 23.5ZM0.93934 3.06066L20.9393 23.0607L23.0607 20.9393L3.06066 0.93934L0.93934 3.06066Z" fill="#414141"/>
+                        </svg>
+                        <p>Ведет проекты <b>с 2006 года</b>, создавая PR, который работает на результат</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section class="faq-block">
+            <div class="faq-main">
+                <div class="faq-center">
+                    <div class="faq-head">
+                        <div class="faq-head-and-button">
+                            <h2>Ответы на вопросы</h2>
+                            <button>ЗАДАТЬ ВОПРОС</button>
+                        </div>
+                        <div class="faq-head-image-flex">
+                            <img class="faq-head-img" src="img/Иллюстрация(1).png">
+                        </div>
+                    </div>
+                    <div class="faq-main-content">
+                        <div class="faq-card">
+                            <div class="faq-card-flex">
+                                <p>А PR это разве про репутацию?</p>
+                                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.375022 9.66229C-0.125658 9.2185 -0.125658 8.499 0.375022 8.05521L9.09298 0.327931C9.59362 -0.115821 10.4054 -0.115821 10.9061 0.327931L19.624 8.05521C20.1247 8.499 20.1247 9.2185 19.624 9.66229C19.1234 10.1061 18.3116 10.1061 17.8109 9.66229L9.99952 2.73851L2.18812 9.66229C1.68744 10.1061 0.87569 10.1061 0.375022 9.66229Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="faq-card-otvet">
+                                При этом объяснения материалов происходят в формате видеоуроков в демонстрации экрана. Поймет даже ребенок! То есть Вам нужно будет просто повторять то же самое.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-flex">
+                                <p>Что если ваша PR-кампания не сработает?</p>
+                                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.375022 9.66229C-0.125658 9.2185 -0.125658 8.499 0.375022 8.05521L9.09298 0.327931C9.59362 -0.115821 10.4054 -0.115821 10.9061 0.327931L19.624 8.05521C20.1247 8.499 20.1247 9.2185 19.624 9.66229C19.1234 10.1061 18.3116 10.1061 17.8109 9.66229L9.99952 2.73851L2.18812 9.66229C1.68744 10.1061 0.87569 10.1061 0.375022 9.66229Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="faq-card-otvet">
+                                При этом объяснения материалов происходят в формате видеоуроков в демонстрации экрана. Поймет даже ребенок! То есть Вам нужно будет просто повторять то же самое.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-flex">
+                                <p>А вдруг втяните меня в громкий скандал?</p>
+                                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.375022 9.66229C-0.125658 9.2185 -0.125658 8.499 0.375022 8.05521L9.09298 0.327931C9.59362 -0.115821 10.4054 -0.115821 10.9061 0.327931L19.624 8.05521C20.1247 8.499 20.1247 9.2185 19.624 9.66229C19.1234 10.1061 18.3116 10.1061 17.8109 9.66229L9.99952 2.73851L2.18812 9.66229C1.68744 10.1061 0.87569 10.1061 0.375022 9.66229Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="faq-card-otvet">
+                                При этом объяснения материалов происходят в формате видеоуроков в демонстрации экрана. Поймет даже ребенок! То есть Вам нужно будет просто повторять то же самое.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-flex">
+                                <p>Сколько стоит ваша работа “под ключ”?</p>
+                                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.375022 9.66229C-0.125658 9.2185 -0.125658 8.499 0.375022 8.05521L9.09298 0.327931C9.59362 -0.115821 10.4054 -0.115821 10.9061 0.327931L19.624 8.05521C20.1247 8.499 20.1247 9.2185 19.624 9.66229C19.1234 10.1061 18.3116 10.1061 17.8109 9.66229L9.99952 2.73851L2.18812 9.66229C1.68744 10.1061 0.87569 10.1061 0.375022 9.66229Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="faq-card-otvet">
+                                При этом объяснения материалов происходят в формате видеоуроков в демонстрации экрана. Поймет даже ребенок! То есть Вам нужно будет просто повторять то же самое.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-flex">
+                                <p>Какие будут охваты?</p>
+                                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.375022 9.66229C-0.125658 9.2185 -0.125658 8.499 0.375022 8.05521L9.09298 0.327931C9.59362 -0.115821 10.4054 -0.115821 10.9061 0.327931L19.624 8.05521C20.1247 8.499 20.1247 9.2185 19.624 9.66229C19.1234 10.1061 18.3116 10.1061 17.8109 9.66229L9.99952 2.73851L2.18812 9.66229C1.68744 10.1061 0.87569 10.1061 0.375022 9.66229Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="faq-card-otvet">
+                                При этом объяснения материалов происходят в формате видеоуроков в демонстрации экрана. Поймет даже ребенок! То есть Вам нужно будет просто повторять то же самое.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-button-mobile">
+                        <button>ЗАДАТЬ ВОПРОС</button>
+                        <img class="faq-head-img" src="img/Иллюстрация(1).png">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-block-main">
+            <div class="footer-block-center">
+                <div class="footer-block-head">
+                    <h2>Контакты</h2>
+                    <p>Роман Масленников</p>
+                </div>
+                <div class="footer-block-flex">
+                    <div class="footer-block-column">
+                        <ul>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none">
+                                    <path d="M5.88588 8.5625L5.63775 12.1921C5.99276 12.1921 6.14651 12.0335 6.33089 11.843L7.9953 10.1888L11.4441 12.8154C12.0767 13.182 12.5223 12.989 12.6929 12.2103L14.9567 1.17854L14.9573 1.17789C15.158 0.205491 14.6192 -0.174757 14.0029 0.0637921L0.696378 5.36191C-0.211769 5.72851 -0.198019 6.25501 0.541999 6.49356L3.94396 7.594L11.846 2.45188C12.2179 2.19578 12.556 2.33748 12.2779 2.59358L5.88588 8.5625Z" fill="#414141" fill-opacity="0.5"/>
+                                </svg>
+                                roman_maslennikov
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7254 13.1887C14.6258 13.288 14.5057 13.4149 14.3783 13.5492C14.0606 13.8865 13.6635 14.3058 13.4147 14.4759C12.1055 15.3705 10.354 14.9425 9.11503 14.4262C7.48066 13.7452 5.70128 12.4899 4.10359 10.892C2.5044 9.29386 1.24932 7.51382 0.568346 5.8803C0.052745 4.64103 -0.376229 2.88907 0.518544 1.57949C0.688458 1.33046 1.1087 0.934041 1.44554 0.615611C1.5803 0.488637 1.70627 0.368665 1.80588 0.269377C1.98271 0.0934117 2.22203 -0.00537109 2.47149 -0.00537109C2.72095 -0.00537109 2.96026 0.0934117 3.1371 0.269377L5.54601 2.67772C5.72187 2.85455 5.82058 3.09382 5.82058 3.34322C5.82058 3.59262 5.72187 3.83188 5.54601 4.00871L4.88979 4.66365C4.67063 4.88122 4.52759 5.16373 4.48193 5.46916C4.43628 5.77458 4.49046 6.08658 4.63641 6.35872C5.539 8.06236 6.93243 9.45564 8.63613 10.358C8.9082 10.5039 9.22013 10.558 9.52544 10.5123C9.83076 10.4665 10.1131 10.3234 10.3305 10.1042L10.9851 9.44922C11.162 9.27325 11.4013 9.17447 11.6507 9.17447C11.9002 9.17447 12.1395 9.27325 12.3164 9.44922L14.7254 11.858C14.9013 12.0347 15 12.274 15 12.5233C15 12.7727 14.9013 13.0119 14.7254 13.1887Z" fill="#414141" fill-opacity="0.5"/>
+                                </svg>
+                                8 (922) 88-000-23
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 -0.00537109C3.58886 -0.00537109 0 3.58349 0 7.99463C0 12.4058 3.58886 15.9946 8 15.9946C9.40674 15.9946 10.79 15.6245 12.001 14.9238L11 13.1924C10.0928 13.7173 9.05517 13.9946 8 13.9946C4.69142 13.9946 1.99999 11.3032 1.99999 7.99463C1.99999 4.68605 4.69142 1.99462 8 1.99462C11.3086 1.99462 14 4.68605 14 7.99463V8.86572C14 9.52003 13.5796 9.99462 13 9.99462C12.4487 9.99462 12 9.54589 12 8.99461V4.99462H10.6176C9.91413 4.38005 9.00527 3.99461 8 3.99461C5.79443 3.99461 3.99998 5.78906 3.99998 7.99463C3.99998 10.2002 5.79443 11.9946 8 11.9946C9.05029 11.9946 9.99989 11.5793 10.7144 10.9148C11.2651 11.5693 12.0797 11.9946 13 11.9946C14.6821 11.9946 16 10.6202 16 8.86572V7.99463C16 3.58349 12.4111 -0.00537109 8 -0.00537109ZM8 9.99462C6.89696 9.99462 6.00001 9.09764 6.00001 7.99463C6.00001 6.89159 6.89699 5.99464 8 5.99464C9.10304 5.99464 9.99999 6.89162 9.99999 7.99463C9.99999 9.09767 9.10304 9.99462 8 9.99462Z" fill="#414141" fill-opacity="0.5"/>
+                                </svg>
+                                roman@email.ru
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-block-button">
+                        <button class="promo-button">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                    </div>
+                </div>
+                <div class="footer-block-border"></div>
+                <div class="footer-block-politic">
+                    <div class="footer-block-politic-text">
+                        <p>Политика конфиденциальности</p>
+                    </div>
+                    <div class="footer-block-dannie">
+                        <p>
+                            ИП Масленников Р.М.<br>
+                            ИНН 690142067822<br>
+                            ОГРН 318695200021338
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
